@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lady Maria — Application for Training</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Lady Maria — Elegant Discipline. Apply for structured lifestyle training, posture refinement, and protocol."/>
+
+<style>
+:root {
+--bg1: #0a0a0a;
+--bg2: #1a1a1a;
+--gold: #c8a45a;
+--text: #f3f2ef;
+--muted: #b9b6b4;
+--accent: #c8a45a;
+--panel: rgba(255,255,255,0.04);
+--max-width: 900px;
+--serif: "Georgia", serif;
+--sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+margin: 0;
+background: linear-gradient(180deg, var(--bg1), var(--bg2));
+color: var(--text);
+font-family: var(--sans);
+-webkit-font-smoothing: antialiased;
+padding-bottom: 80px;
+}
+
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: 30px 20px; }
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid rgba(200,164,90,0.15); }
+
+.logo { font-family: var(--serif); font-size: 30px; display: flex; align-items: center; gap: 8px; }
+
+.logo-icon { font-size: 34px; font-weight: bold; padding: 3px 8px; border-radius: 6px; border: 1px solid var(--accent); color: var(--accent); }
+
+nav { display: flex; gap: 16px; }
+
+nav a { text-decoration: none; color: var(--muted); font-size: 14px; padding: 6px; }
+nav a:hover { color: var(--accent); }
+
+.hero { margin-top: 28px; background: var(--panel); border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+.hero img { width: 20%; display: block; }
+
+.card { margin-top: 24px; background: var(--panel); padding: 22px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); }
+.card h2 { font-family: var(--serif); margin-top: 0; }
+
+.lead { color: var(--muted); line-height: 1.6; }
+
+.pay-option { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
+.pay-option svg { width: 32px; height: 32px; }
+
+form { display: grid; gap: 14px; }
+input, select, textarea { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: var(--text); padding: 12px; border-radius: 6px; font-size: 15px; }
+textarea { min-height: 120px; }
+
+.btn { background: var(--accent); border: 0; padding: 12px 16px; color: #000; border-radius: 6px; font-weight: bold; cursor: pointer; }
+.btn.alt { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: var(--muted); }
+
+.small { font-size: 13px; color: var(--muted); }
+
+footer { text-align: center; margin-top: 40px; padding: 20px 0; color: var(--muted); border-top: 1px solid rgba(200,164,90,0.15); font-size: 13px; }
+</style>
+
+<!-- EmailJS -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+(function(){ emailjs.init("Hafx1i9fWpyMIEpXe"); })(); // your User ID
+</script>
+
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+<div class="logo">
+<span class="logo-icon">M</span> Lady Maria
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#tributes">Tributes</a>
+<a href="#payments">Payments</a>
+<a href="#apply">Apply</a>
+</nav>
+</header>
+
+<div class="hero">
+<img src="image/IMG_5475.jpg" alt="Lady Maria">
+</div>
+
+<section class="card" id="about">
+<h2>About Lady Maria</h2>
+<p class="lead">
+Elegant. Structured. Unwavering discipline. All training is based on mutual consent, respect, and personal refinement.
+</p>
+</section>
+
+<section class="card" id="tributes">
+<h2>Tributes</h2>
+<ul class="small">
+<li>$20 — Conversation & Guidance</li>
+<li>$60 — Virtual Tasks (PG)</li>
+<li>$250 — In-Person Consultation (non-intimate)</li>
+<li>$700 — Equipment & Education Session</li>
+<li>$100–$300 — Discipline Program (tiered)</li>
+</ul>
+</section>
+
+<section class="card" id="payments">
+<h2>Payments</h2>
+<p class="small">Tap any method to send tribute or payment.</p>
+
+<div class="pay-option">
+<svg viewBox="0 0 24 24" fill="#c8a45a"><path d="M13.5 2c4.1 0 6.5 2.4 6.5 5.6 0 4.6-3.7 7-8.5 7h-1.2l-.9 5.4H6L8 4h4.7c.5 0 1.1 0 1.5-.1z"/></svg>
+<a href="https://paypal.me/REMarty28" target="_blank" class="small">PayPal — @REMarty28</a>
+</div>
+
+<div class="pay-option">
+<svg viewBox="0 0 24 24" fill="#c8a45a"><path d="M12 2l7 5v10l-7 5-7-5V7z"/></svg>
+<a href="tel:+13045215693" class="small">Zelle — +1 (304) 521-5693</a>
+</div>
+
+<div class="pay-option">
+<svg viewBox="0 0 24 24" fill="#c8a45a"><circle cx="12" cy="12" r="10"/></svg>
+<a href="tel:+13045215693" class="small">Chime — +1 (304) 521-5693</a>
+</div>
+
+<div class="pay-option">
+<svg viewBox="0 0 24 24" fill="#c8a45a"><path d="M16 2c-1.5 0-3 .9-3.7 2.2C11.9 5.6 12 7.4 13 8.7c.8 1.2 2.1 2 3.5 2 .1 0 .3 0 .4-.1-1.8 5-4.4 6.4-6 6.4-1.2 0-2.3-.7-3.2-2-1.3-1.9-1.8-4.5-1.1-6.8C7.3 6.1 9.4 4 12 4c1.1 0 2.1.4 3 1.1C15.4 3.3 16.7 2 18 2c.3 0 .6 0 .8.1C18.1 1.5 17.1 1 16 1z"/></svg>
+<a href="tel:+13045215693" class="small">Apple Pay — +1 (304) 521-5693</a>
+</div>
+</section>
+
+<section class="card" id="apply">
+<h2>Apply for Training</h2>
+<p class="small">All applicants must be 18+.</p>
+
+<form id="applyForm">
+<input type="text" id="field_name" placeholder="Name / Alias" required>
+<input type="email" id="field_email" placeholder="Email" required>
+
+<select id="field_level" required>
+<option value="">Experience Level</option>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Experienced</option>
+</select>
+
+<select id="field_interest" required>
+<option value="">Select Program</option>
+<option>$20 — Talk</option>
+<option>$60 — Virtual Tasks</option>
+<option>$250 — Consultation</option>
+<option>$700 — Equipment Session</option>
+<option>$100–$300 — Discipline Program</option>
+</select>
+
+<textarea id="field_reason" placeholder="Why are you applying?" required></textarea>
+<textarea id="field_limits" placeholder="Boundaries / Hard limits" required></textarea>
+
+<label style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+<input type="checkbox" id="field_age" required>
+<span class="small">I confirm I am 18+ years of age</span>
+</label>
+
+<label style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+<input type="checkbox" id="field_terms" required>
+<span class="small" style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+I agree to the <a href="terms.html" target="_blank">Terms</a> & <a href="privacy.html" target="_blank">Privacy Policy</a>
+</span>
+</label>
+
+<div style="display:flex; gap:12px;">
+<button type="button" class="btn" id="btnSubmit">Submit Application</button>
+<button type="reset" class="btn alt">Reset</button>
+</div>
+
+<div id="applyResult" class="small" style="margin-top:10px;"></div>
+</form>
+</section>
+
+<footer>
+© Lady Maria — All Rights Reserved · <a href="terms.html" target="_blank">Terms</a> · <a href="privacy.html" target="_blank">Privacy</a>
+</footer>
+
+</div>
+
+<script>
+const config = {
+whatsappNumber: "18706173027",
+whatsappHeader: "Application for Training Under Lady Maria",
+minReasonLength: 12
+};
+
+function isMobile(){ return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent); }
+
+function validateForm(data){
+if(!data.name) return "Please enter your name.";
+if(!/^\S+@\S+\.\S+$/.test(data.email)) return "Enter a valid email.";
+if(!data.level) return "Select experience level.";
+if(!data.interest) return "Select a program.";
+if(data.reason.length < config.minReasonLength) return "Reason is too short.";
+if(data.limits.length < 3) return "Please list limits.";
+if(!data.ageConfirmed) return "You must confirm you're 18+.";
+if(!data.termsAgreed) return "You must agree to Terms & Privacy.";
+return null;
+}
+
+function formatMessage(data){
+return encodeURIComponent(
+config.whatsappHeader + "\n\n" +
+"Name: " + data.name + "\n" +
+"Email: " + data.email + "\n" +
+"Level: " + data.level + "\n" +
+"Interest: " + data.interest + "\n" +
+"Reason: " + data.reason + "\n" +
+"Limits: " + data.limits + "\n" +
+"Submitted: " + new Date().toISOString()
+);
+}
+
+document.getElementById("btnSubmit").addEventListener("click", () => {
+const data = {
+name: field_name.value.trim(),
+email: field_email.value.trim(),
+level: field_level.value,
+interest: field_interest.value,
+reason: field_reason.value.trim(),
+limits: field_limits.value.trim(),
+ageConfirmed: field_age.checked,
+termsAgreed: field_terms.checked
+};
+
+const result = document.getElementById("applyResult");
+const error = validateForm(data);
+if(error){ result.textContent = error; result.style.color = "#e67373"; return; }
+result.textContent = "";
+
+// --- EmailJS send ---
+emailjs.send("service_dlo53ce", "template_0w5lnop", {
+applicant_name: data.name,
+applicant_email: data.email,
+experience: data.level,
+interest: data.interest,
+reason: data.reason,
+limits: data.limits,
+submitted_at: new Date().toISOString()
+})
+.then(function(response){
+result.textContent = "Application sent successfully!";
+result.style.color = "#c8a45a";
+}, function(error){
+result.textContent = "Failed to send. Try again later.";
+result.style.color = "#e67373";
+});
+
+// --- WhatsApp notification ---
+const encoded = formatMessage(data);
+const phone = config.whatsappNumber.replace(/\D/g, "");
+const url = isMobile()
+? "https://wa.me/" + phone + "?text=" + encoded
+: "https://web.whatsapp.com/send?phone=" + phone + "&text=" + encoded;
+window.open(url, "_blank");
+});
+</script>
+
+</body>
+</html>
